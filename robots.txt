@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eerielettuce3717.github.io/nexus/sitemap.xml

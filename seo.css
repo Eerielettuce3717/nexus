@@ -1,0 +1,206 @@
+/* Shared styles for crawlable SEO landing pages (index.html static block + static HTML pages). */
+body.seo-page {
+  background: #010f2a;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.seo-page,
+#static-seo {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #cdd6f4;
+  background: #010f2a;
+  line-height: 1.65;
+}
+
+.seo-page h1,
+#static-seo h1 {
+  font-size: 1.85rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.seo-page h2,
+#static-seo h2 {
+  font-size: 1.25rem;
+  margin: 2rem 0 0.75rem;
+  color: #89b4fa;
+}
+
+.seo-page h3,
+#static-seo h3 {
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.5rem;
+  color: #b4befe;
+}
+
+.seo-page p,
+#static-seo p {
+  margin-bottom: 0.85rem;
+  color: #a6adc8;
+}
+
+.seo-page ul,
+.seo-page ol,
+#static-seo ul,
+#static-seo ol {
+  margin: 0.5rem 0 1rem 1.35rem;
+  color: #a6adc8;
+}
+
+.seo-page li,
+#static-seo li {
+  margin-bottom: 0.35rem;
+}
+
+.seo-page a,
+#static-seo a {
+  color: #89b4fa;
+}
+
+.seo-page a:hover,
+#static-seo a:hover {
+  color: #b4befe;
+}
+
+.seo-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #313244;
+  font-size: 0.9rem;
+}
+
+.seo-hero-lead {
+  font-size: 1.05rem;
+  color: #a6adc8;
+}
+
+.seo-cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  background: #89b4fa;
+  color: #11111b !important;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seo-cta:hover {
+  background: #b4befe;
+  color: #11111b !important;
+}
+
+.seo-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+}
+
+.seo-feature-grid li {
+  background: #11111b;
+  border: 1px solid #313244;
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  margin: 0;
+}
+
+.seo-feature-grid strong {
+  display: block;
+  color: #cdd6f4;
+  margin-bottom: 0.25rem;
+}
+
+.seo-figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.seo-figures figure {
+  margin: 0;
+  background: #11111b;
+  border: 1px solid #313244;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.seo-figures img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.seo-figures figcaption {
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  color: #a6adc8;
+}
+
+.seo-links {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #313244;
+  font-size: 0.9rem;
+}
+
+.seo-legal {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #a6adc8;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  z-index: 20;
+  padding: 8px 12px;
+  background: #89b4fa;
+  color: #11111b;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  left: 16px;
+}
+
+.seo-page a:focus-visible,
+#static-seo a:focus-visible,
+.seo-cta:focus-visible {
+  outline: 2px solid #89b4fa;
+  outline-offset: 2px;
+}
+
+/* Keep crawlable copy in the DOM for search engines; hide visually once the app mounts. */
+body.app-ready #static-seo {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .seo-page h1,
+  #static-seo h1 {
+    font-size: 1.45rem;
+  }
+}

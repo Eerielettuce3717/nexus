@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Run Python online in Nexus Online IDE using Pyodide — browser-based Python IDE with pip packages, stdin support, and terminal output." />
+    <link rel="canonical" href="https://eerielettuce3717.github.io/nexus/languages/python.html" />
+    <link rel="icon" type="image/png" href="/nexus/logo.png" />
+    <link rel="stylesheet" href="/nexus/seo.css" />
+    <title>Python Online IDE — Pyodide in the Browser | Nexus Online IDE</title>
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Nexus Online IDE" />
+    <meta property="og:title" content="Python Online IDE — Pyodide in the Browser" />
+    <meta property="og:description" content="Run Python online with Pyodide WebAssembly — stdin, stdout, pip packages, no install." />
+    <meta property="og:url" content="https://eerielettuce3717.github.io/nexus/languages/python.html" />
+    <meta property="og:image" content="https://eerielettuce3717.github.io/nexus/logo.png" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Python Online IDE — Pyodide in the Browser",
+      "description": "Run Python online in Nexus Online IDE using Pyodide with pip packages and interactive input().",
+      "url": "https://eerielettuce3717.github.io/nexus/languages/python.html",
+      "author": { "@type": "Organization", "name": "Nexus Online IDE" },
+      "publisher": { "@type": "Organization", "name": "Nexus Online IDE", "logo": { "@type": "ImageObject", "url": "https://eerielettuce3717.github.io/nexus/logo.png" } }
+    }
+    </script>
+  </head>
+  <body class="seo-page">
+    <nav class="seo-nav" aria-label="Site sections">
+      <a href="https://eerielettuce3717.github.io/nexus/">Editor</a>
+      <a href="/nexus/online-ide.html">Online IDE</a>
+      <a href="/nexus/docs.html">Documentation</a>
+      <a href="/nexus/examples.html">Examples</a>
+      <a href="/nexus/faq.html">FAQ</a>
+      <a href="/nexus/languages/javascript.html">JavaScript</a>
+      <a href="/nexus/languages/python.html" aria-current="page">Python</a>
+      <a href="/nexus/run-javascript-online.html">Run JS</a>
+      <a href="/nexus/run-python-online.html">Run Python</a>
+      <a href="/nexus/free-code-editor.html">Free Editor</a>
+    </nav>
+
+    <h1>Python Online IDE — Run Python with Pyodide</h1>
+    <p class="seo-hero-lead">
+      Nexus Online IDE runs Python in the browser through Pyodide, a WebAssembly build of CPython. Execute scripts,
+      handle interactive input, install compatible pip packages, and view output in a terminal — no local Python install.
+    </p>
+    <p><a class="seo-cta" href="https://eerielettuce3717.github.io/nexus/">Run Python now</a></p>
+
+    <figure class="seo-figures" style="grid-template-columns:1fr;max-width:28rem;">
+      <figure>
+        <img src="/nexus/seo/console-output.svg" width="640" height="360" alt="Python code running in web IDE console output with Pyodide stdin and stdout" loading="lazy" />
+      </figure>
+    </figure>
+
+    <h2>How Pyodide powers the browser runtime</h2>
+    <p>
+      Pyodide compiles CPython to WebAssembly so the interpreter runs client-side. When you press Run on a
+      <code>.py</code> file, the runtime loads once per session, executes your code in an isolated environment, and
+      redirects stdout and stderr to the IDE console. This architecture means low latency for classroom and practice
+      workloads without provisioning servers.
+    </p>
+
+    <h2>Interactive input()</h2>
+    <p>
+      Programs that call <code>input()</code> trigger terminal prompts as execution reaches each call. Press Run to
+      start the program; type responses in the terminal when the <code>in</code> prompt appears. This matches desktop
+      Python behavior for homework and competitive programming drills.
+    </p>
+
+    <h2>Installing packages</h2>
+    <p>
+      Use the Packages tab or <code>pip install</code> in the terminal for Pyodide-compatible wheels (numpy, pandas,
+      matplotlib, and others). Packages install via micropip into the browser runtime — not every PyPI package is
+      supported, but scientific and utility libraries commonly work.
+    </p>
+
+    <h2>Use cases</h2>
+    <ul>
+      <li>CS101 assignments and Python tutorials</li>
+      <li>Data exercises with numpy/pandas</li>
+      <li>Scripting practice and stdin/stdout drills</li>
+      <li>Quick validation before copying to a local project</li>
+    </ul>
+
+    <h2>Learn more</h2>
+    <ul>
+      <li><a href="/nexus/run-python-online.html">Run Python online</a></li>
+      <li><a href="/nexus/examples.html">Python examples</a></li>
+      <li><a href="/nexus/docs.html">IDE documentation</a></li>
+      <li><a href="https://pyodide.org/en/stable/" rel="noopener noreferrer">Pyodide documentation</a></li>
+      <li><a href="https://docs.python.org/3/tutorial/" rel="noopener noreferrer">Official Python tutorial</a></li>
+      <li><a href="https://eerielettuce3717.github.io/nexus/">Open Nexus Online IDE</a></li>
+    </ul>
+
+    <footer class="seo-links">
+      <p><a href="/nexus/languages/javascript.html">JavaScript online IDE guide</a> · <a href="https://eerielettuce3717.github.io/nexus/">Editor</a></p>
+      <p class="seo-legal">
+        Operated by Varun Ganti ·
+        <a href="mailto:varun.m.ganti@gmail.com">varun.m.ganti@gmail.com</a><br />
+        <a href="/nexus/privacy.html">Privacy Policy</a> ·
+        <a href="/nexus/terms.html">Terms of Service</a> ·
+        <a href="/nexus/cookies.html">Cookie Policy</a> ·
+        <a href="/nexus/refund.html">Refund Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>

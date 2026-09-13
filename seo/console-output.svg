@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Python code running in web IDE console output</title>
+  <desc id="desc">Mockup of browser IDE terminal showing Python Pyodide execution output and stdin prompt</desc>
+  <rect width="640" height="360" fill="#11111b"/>
+  <rect x="0" y="0" width="640" height="28" fill="#181825"/>
+  <text x="12" y="18" fill="#6c7086" font-family="monospace" font-size="11">Terminal  main.py</text>
+  <text x="16" y="52" fill="#89b4fa" font-family="monospace" font-size="12">&gt;&gt;&gt; </text>
+  <text x="52" y="52" fill="#cdd6f4" font-family="monospace" font-size="12">python main.py</text>
+  <text x="16" y="78" fill="#a6e3a1" font-family="monospace" font-size="12">Enter your name:</text>
+  <text x="16" y="104" fill="#89b4fa" font-family="monospace" font-size="12">in </text>
+  <text x="36" y="104" fill="#cdd6f4" font-family="monospace" font-size="12">Alex</text>
+  <text x="16" y="130" fill="#cdd6f4" font-family="monospace" font-size="12">Hello, Alex!</text>
+  <text x="16" y="156" fill="#9399b2" font-family="monospace" font-size="12">(program finished)</text>
+  <rect x="16" y="180" width="608" height="1" fill="#313244"/>
+  <text x="16" y="204" fill="#6c7086" font-family="monospace" font-size="11">Pyodide Python 3.12 · stdout captured in browser</text>
+</svg>

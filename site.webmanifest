@@ -1,0 +1,19 @@
+{
+  "name": "Nexus Online IDE",
+  "short_name": "Nexus IDE",
+  "description": "Free online IDE — run JavaScript and Python in your browser with terminal, live preview, and multi-file editing.",
+  "start_url": "/nexus/",
+  "display": "standalone",
+  "background_color": "#010f2a",
+  "theme_color": "#010f2a",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/nexus/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["developer", "education", "productivity"]
+}
